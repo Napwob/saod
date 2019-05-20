@@ -2,7 +2,6 @@
 #include <limits.h>
 #include <time.h>
 #include <stdlib.h>
-#include <conio.h>
 #include <sys/time.h>
 
 #define V 20
@@ -19,7 +18,7 @@ int minDistance(int dist[], bool sptSet[])
    return min_index;
 }
 
-int printSolution(int dist[], int n)
+void printSolution(int dist[], int n)
 {
    printf("Vertex   Distance from Source\n");
    for (int i = 0; i < V; i++)
